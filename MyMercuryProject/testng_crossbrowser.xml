@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="CrossBrowser" parallel="tests" thread-count="3">
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome"></parameter>
+     <classes>
+      <class name="com.mymercury.testcases.AddDataSourcePageTest"/>
+      <class name="com.mymercury.testcases.LoginPageTest"/>
+      <class name="com.mymercury.testcases.ViewModifyPageTest"/>
+    </classes>
+  </test>
+   <!-- Test -->
+    <test name="FirFoxBrowser">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="com.mymercury.testcases.AddDataSourcePageTest"/>
+      <class name="com.mymercury.testcases.LoginPageTest"/>
+      <class name="com.mymercury.testcases.ViewModifyPageTest"/>
+    </classes>
+    </test>
+    
+<test name="EdgeTest">
+  <parameter name="browser" value="Edge"></parameter>
+     <classes>
+      <class name="com.mymercury.testcases.AddDataSourcePageTest"/>
+      <class name="com.mymercury.testcases.LoginPageTest"/>
+      <class name="com.mymercury.testcases.ViewModifyPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
